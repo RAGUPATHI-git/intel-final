@@ -4,7 +4,7 @@ import requests
 import numpy as np
 from datetime import datetime
 import mysql.connector
-# from optimum.intel import IPEXModelForCausalLM // intel tool-kit
+# from optimum.intel import IPEXModelForCausalLM // intel tool-kit if you want optimize use this line of code
 from transformers import AutoModelForCausalLM 
 con=mysql.connector.connect(host="localhost",user="root",password="Ramachandran@9842",database="signup")
 
