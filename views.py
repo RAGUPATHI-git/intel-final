@@ -11,7 +11,7 @@ con=mysql.connector.connect(host="localhost",user="root",password="Ramachandran@
 
 
 API_URL = "https://api-inference.huggingface.co/models/renderartist/simplevectorflux"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer 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"}
 genai.configure(api_key= "AIzaSyA0T-E9wSZngrAqsK1nz2JOVzonSxTxTOQ")
 img_ids = []
 
@@ -19,8 +19,6 @@ img_ids = []
 def stable_diffusion(prompt):
     
    def query(payload):
-            id = str(datetime.datetime.today()).replace(":", '').replace(' ','').replace('-','').replace('.','')
-            img_ids.append(id)
             response = requests.post(API_URL, headers=headers, json=payload)
             return response.content
    image_bytes = query({
@@ -30,7 +28,7 @@ def stable_diffusion(prompt):
    import io
    from PIL import Image
    image = Image.open(io.BytesIO(image_bytes))
-   image.save('./static/images/saved/'+ id + '.png')
+   image.save('./static/images/saved/img.png')
 
 
 
