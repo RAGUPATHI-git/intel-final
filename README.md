@@ -11,3 +11,5 @@ SQL: We also having the login page.the user datas are going to story into the lo
 Fine Tuning: ! For fine tuning we are using LORA (low rank adaptatioin) which is basically freeze the base parameters and use the lora weights
 
 Flow chart :![flowchart](https://github.com/user-attachments/assets/6fe071a2-68dd-4b1a-a065-e7d39c6f95ab)
+
+--we are giving only one image for inferencing because of it's takes 1 min for each image
