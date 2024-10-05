@@ -1,5 +1,7 @@
 Story book narrative model
 
+run the program using app.py 
+
 --This model can able to generate it's own story and images --we are accessing pretrained models to this project like (Gemini) -- And leverage the model by using of intel openvino toolkit for optimize the rendering time -- you can't directly access the model because you need the access token key from hugging face.
 
 Technnologies that we are used : LLM: The LLM basically narrte the story from the online of prompt
